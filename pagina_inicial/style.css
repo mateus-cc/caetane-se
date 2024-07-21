@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  background-color: #adb673;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+
+#cabecalho {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#logo {
+  margin-left: 31px;
+  margin-top: 10px;
+}
+
+#logo img {
+  width: 150px;
+  height: 150px;
+  opacity: 0.;
+  mix-blend-mode: multiply;
+}
+
+#navegador {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  margin-right: 34px;
+  margin-top: 80px;
+}
+
+.dropdown-search {
+  display: none;
+  width: 450px;
+  height: 450px;
+  background-color: #848C4C;
+  position: absolute;
+  border: 1px solid black;
+  z-index: 1000;
+  opacity: 0.9;
+  top: 0.2%;
+  right: 0.2%;
+}
+
+.dropdown-search img {
+  background-color: #848C4C;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+}
+
+.dropdown-search input {
+  width: 15vw;
+  height: 3.5vh;
+  color: white;
+  border-radius: 1vw;
+  text-align: center;
+  margin-right: 5px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.dropdown-search.active {
+  display: block;
+}
+
+.dropdown-shopping {
+  display: none;
+  width: 450px;
+  height: 450px;
+  background-color: #848C4C;
+  position: absolute;
+  border: 1px solid black;
+  z-index: 1000;
+  opacity: 0.9;
+  top: 0.2%;
+  right: 0.2%;  
+}
+
+.dropdown-shopping img {
+  width: 5%;
+  background-color: #848C4C;
+  position: absolute;
+  top: 10%;
+  left: 68%;
+}
+
+.dropdown-shopping p {
+  background-color: #848C4C;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+.dropdown-shopping.active {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  width: 450px;
+  height: 450px;
+  background-color: #848C4C;
+  position: absolute;
+  border: 1px solid black;
+  z-index: 1000;
+  opacity: 0.9;
+  top: 0.2%;
+  right: 0.2%;
+}
+
+.dropdown-menu a {
+  background-color: #848C4C;
+  list-style: none;
+  color: black;
+  display: flex;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.carrossel-container {
+  display: flex;
+  width: 100%;
+  min-width: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.images-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  margin-top: 12%;
+  margin-bottom: 15%;
+}
+
+.carrossel-images {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-btn, #next-btn {
+  width: 1%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-btn img, #next-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-btn {
+  transform: rotate(180deg);
+}
+
+.opcoes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.opcoes_imagens {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.opcoes_sobrepor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opcoes_botoes {
+  width: 120px;
+  height: 45px;
+  color: white;
+  background-color: #6f8143;
+  border-radius: 90px;
+  opacity: 0.8;
+  position: relative;
+  bottom: 70px;
+  border: 1px solid black;
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  margin: auto;
+}
+
+#rodape {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+#rodape_lista {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#rodape_lista a {
+  color: black;
+  margin-left: 55px;
+}
+
+.rodape_lista_icones {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+/* o media query está pegando em tudo, por isso está comentado
+funciona em 390px */
+
+/* @media (min-width: 390px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #cabecalho {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo img {
+    width: 110%;
+    height: 110%;
+  }
+
+  .carrossel-container {
+    display: none;
+  }
+
+  .lupa-icon, .car-icon, .phone-icon{
+    display: none;
+  }
+
+  .dropdown-menu {
+    width: 105%;
+  }
+
+  .opcoes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #rodape_lista {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+} */
