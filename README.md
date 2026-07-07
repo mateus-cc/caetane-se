@@ -57,10 +57,12 @@ ATIVIDADE-4-5/
 │   └── main.js      # Consumo da API ViaCEP e eventos dos botões CTA
 └── index.html       # Estrutura principal da Landing Page
 ```
+---
 
-🔀 Fluxo de Versionamento (Git Branches)
-Para atender as boas práticas do mercado e o requisito da entrega, o desenvolvimento seguiu o fluxo:
+## 🔀 Fluxo de Versionamento (Git Branches)
 
-develop: Branch onde todo o código HTML, estilização CSS, lógica JS e testes de integração com a API ViaCEP foram realizados.
+* Para atender as boas práticas do mercado e o requisito da entrega, o desenvolvimento seguiu o fluxo:
 
-main: Branch principal que recebe o merge da branch develop apenas quando o site está completamente funcional, testado e pronto para avaliação ou deploy em produção.
+* develop: Branch onde todo o código HTML, estilização CSS, lógica JS e testes de integração com a API ViaCEP foram realizados.
+
+* main: Branch principal que recebe o merge da branch develop apenas quando o site está completamente funcional, testado e pronto para avaliação ou deploy em produção.
