@@ -61,7 +61,7 @@ ATIVIDADE-4-5/
 
 ## 🔀 Fluxo de Versionamento (Git Branches)
 
-* Para atender as boas práticas do mercado e o requisito da entrega, o desenvolvimento seguiu o fluxo:
+Para atender as boas práticas do mercado e o requisito da entrega, o desenvolvimento seguiu o fluxo:
 
 * develop: Branch onde todo o código HTML, estilização CSS, lógica JS e testes de integração com a API ViaCEP foram realizados.
 
