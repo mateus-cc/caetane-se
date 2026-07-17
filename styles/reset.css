@@ -1,5 +1,39 @@
+/* Remove margens e paddings padrão de todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Melhora a renderização de imagens */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove a decoração padrão de links e listas */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Remove estilos de botões e inputs */
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/* Evita que textos fiquem com tamanhos estranhos ao rotacionar a tela no celular */
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
