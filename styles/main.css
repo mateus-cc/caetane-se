@@ -1,2 +1,6 @@
 @import "./reset.css";
-@import "./variables.css"
+@import "./variables.css";
+@import "./header.css";
+@import "./cards.css";
+@import "./footes.css"
+

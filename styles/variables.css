@@ -1,0 +1,51 @@
+:root {
+  /* =========================================
+     PALETA DE CORES
+     ========================================= */
+  
+  /* Cores da Marca (Brand) */
+  --color-primary: #3A5A40;         /* Verde Musgo - Principal */
+  --color-primary-dark: #2A432F;    /* Verde Musgo Escuro - Hovers */
+  
+  --color-secondary: #A3704C;       /* Tom Madeira - Destaques/Botões */
+  --color-secondary-dark: #885B3C;  /* Madeira Escuro - Hovers */
+
+  /* Backgrounds */
+  --color-bg-base: #F9F8F6;         /* Off-white / Fundo geral do body */
+  --color-bg-white: #FFFFFF;        /* Fundo de cards, header e inputs */
+  --color-bg-accent: #EAEFEC;       /* Fundo da faixa ViaCEP */
+  --color-bg-dark: #1E1E24;         /* Fundo do Footer (Quase preto) */
+  --color-bg-toast: #1F2937;        /* Fundo Notificação flutuante */
+
+  /* Tons de Texto e Neutros (Grayscale) */
+  --color-text-title: #1F2937;      /* Cinza Chumbo Escuro - Títulos h1, h2 */
+  --color-text-body: #4B5563;       /* Cinza Médio - Textos descritivos */
+  --color-text-muted: #6B7280;      /* Cinza Suave - Descrição de cards */
+  --color-text-light: #9CA3AF;      /* Cinza Claro - Placeholders e Copyright */
+  
+  /* Bordas e Linhas */
+  --color-border-light: #E5E7EB;    /* Borda sutil de cards */
+  --color-border-input: #D1D5DB;    /* Borda normal de inputs */
+  --color-border-accent: #D4DDD6;   /* Borda faixa ViaCEP */
+  --color-border-dark: #374151;     /* Linha separadora do footer */
+
+
+  /* =========================================
+     TIPOGRAFIA
+     ========================================= */
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+
+  /* =========================================
+     SOMBRAS (Box-Shadows)
+     ========================================= */
+  
+  --shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.2);     /* Header */
+  --shadow-card: 0 5px 15px rgba(0, 0, 0, 0.04);       /* Cards (Normal) */
+  --shadow-card-hover: 0 12px 25px rgba(0, 0, 0, 0.1); /* Cards (Hover) */
+  --shadow-button: 0 4px 12px rgba(58, 90, 64, 0.25);  /* Botão CTA Hero */
+  --shadow-toast: 0 10px 25px rgba(0, 0, 0, 0.2);      /* Modal/Toast */
+  --shadow-image: 0 15px 30px rgba(0, 0, 0, 0.12);     /* Imagem Destaque */
+}

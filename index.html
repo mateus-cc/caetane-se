@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caetane-se</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <header>
-        <img src="./assets/palheta.png" alt="Ícone de palheta">
-        <h1>Caetane-se</h1>
-        <ul>
-            <li>Início</li>
-            <li>Especialidades</li>
-            <li>Leva e Traz</li>
-            <li>Contato</li>
+        <div>
+            <img src="./assets/palheta.png" alt="Ícone de palheta" id="icone-palheta">
+            <h1>Caetane-<strong>se</strong></h1>
+        </div>
+        <ul id="lista-header">
+            <a href="">
+                <li>Início</li>
+            </a>
+            <a href="">
+                <li>Especialidades</li>
+            </a>
+            <a href="">
+                <li>Leva e Traz</li>
+            </a>
+            <a href="">
+                <li>Contato</li>
+            </a>
         </ul>
-        <button>
+        <button class="btn">
             Agendar Luthier
             <img src="./assets/agenda.png" alt="Ícone de agenda">
         </button>
     </header>
-    <hr>
     <main>
         <section>
             <article>
@@ -118,7 +128,13 @@
                 <input type="text" placeholder="() _____-____">
 
                 <label for="instrumento">Qual o instrumento?</label>
-                <input type="l">
+                <select name="" id="">
+                    <option value="">Violão (Aço/Nylon)</option>
+                    <option value="">Guitarra</option>
+                    <option value="">Contrabaixo</option>
+                    <option value="">Cavaquinho / Ukelele</option>
+                    <option value="">Outro</option>
+                </select>
 
                 <label for="descricao">Descreva o problema</label>
                 <textarea name="" id="">
