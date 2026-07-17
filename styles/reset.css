@@ -30,7 +30,6 @@ button, input, textarea, select {
 
 .btn {
   cursor: pointer;
-  
 }
 
 /* Evita que textos fiquem com tamanhos estranhos ao rotacionar a tela no celular */

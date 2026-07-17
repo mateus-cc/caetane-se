@@ -1,4 +1,4 @@
-header {
+#cabecalho {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -12,16 +12,11 @@ header {
     z-index: 10;
 }
 
-header div {
+#cabecalho div {
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-
-#icone-palheta {
-    width: 13%;
-    height: 75%;
 }
 
 #lista-header {
@@ -42,7 +37,7 @@ a:hover {
     color: var(--color-primary);
 }
 
-header button {
+#cabecalho button {
     border: none;
     width: 15%;
     background-color: var(--color-primary);
@@ -57,23 +52,29 @@ header button {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-header button:hover {
+#cabecalho button:hover {
     background-color: var(--color-primary-dark);
     transform: translateY(-3px);
 }
 
-button img {
+#cabecalho button img {
     width: 20px;
     height: auto;
     background-color: transparent;
     filter: invert(1);
 }
 
-header strong {
+#cabecalho strong {
     color: var(--color-primary);
 }
 
-h1 {
+#titulo-site {
     font: var(--font-heading);
     font-size: 30px;
+}
+
+#icone-palheta {
+    width: 13%;
+    height: 75%;
+    color: black;
 }

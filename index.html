@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <header>
+    <header id="cabecalho">
         <div>
             <img src="./assets/palheta.png" alt="Ícone de palheta" id="icone-palheta">
-            <h1>Caetane-<strong>se</strong></h1>
+            <h3 id="titulo-site">Caetane-<strong>se</strong></h3>
         </div>
         <ul id="lista-header">
             <a href="">
@@ -32,15 +32,19 @@
         </button>
     </header>
     <main>
-        <section>
-            <article>
-                <p>OFICINA ARTESANAL</p>
-                <h3>A arte de dar vida ao seu <strong>instrumento.</strong></h3>
-                <p>
+        <section id="conteudo-principal">
+            <article id="primeiro-conteudo">
+                <p id="tag-oficina">
+                    OFICINA ARTESANAL
+                </p>
+                <h1>A arte de dar vida ao seu <strong>instrumento.</strong></h1>
+                <p id="descricao">
                     Luthieria artesanal, regulagem precisa e acessórios selecionados. Devolva a alma e o timbre perfeito ao seu violão, guitarra ou baixo.
                 </p>
-                <button>Ver Serviços</button>
-                <button>Fale Conosco</button>
+                <div>
+                    <button class="btn btn-primario">Ver Serviços</button>
+                    <button class="btn btn-secundario">Fale Conosco</button>
+                </div>
             </article>
             <aside>
                 <img src="./assets/guitar.jpg" alt="">
@@ -146,7 +150,7 @@
     </main>
     <footer>
         <section>
-            <img src="./assets/guitar.jpg" alt="">
+            <img src="./assets/" alt="">
             <h5>
                 Caetane-se
             </h5>
