@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caetane-se</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="cabecalho">
@@ -109,48 +112,66 @@
                 </button>
             </div>
         </section>
-        <section>
-            <div>
-                <h3>Vamos conversar?</h3>
-                <p>
+        <section id="form-container">
+            <div id="infos">
+                <h3 class="texto_infos titulo_infos">Vamos conversar?</h3>
+                <p class="texto_infos">
                     Preencha o formulário para orçamentos, dúvidas ou solicitar a coleta do seu instrumento.
                 </p>
-                <a href="">
-                    <img src="./assets/whatsapp.png" alt="WhatsApp">
+                <a class="texto_infos links_infos" href="">
+                    <div class="icone_bg">
+                        <img class="form_icones" src="./assets/whatsapp.png" alt="WhatsApp">
+                    </div>
                     (19) 9 9213 9999
                 </a>
-                <a href="">
-                    <img src="./assets/o-email.png" alt="E-mail">
+                <a class="texto_infos links_infos" href="">
+                    <div class="icone_bg">
+                        <img class="form_icones" src="./assets/o-email.png" alt="E-mail">
+                    </div>
                     mateus-cc@outlook.com
                 </a>
-                <a href="">
-                    <img src="./assets/pin-de-localizacao.png" alt="Localização">
+                <a class="texto_infos links_infos" href="">
+                    <div class="icone_bg">
+                        <img class="form_icones" src="./assets/pin-de-localizacao.png" alt="Localização">
+                    </div>
                     Araras - SP
                 </a>
             </div>
             <form action="">
-                <label for="name">Nome Completo</label>
-                <input type="text">
-
-                <label for="email">E-mail</label>
-                <input type="email">
-
-                <label for="wpp">WhatsApp</label>
-                <input type="text" placeholder="() _____-____">
-
-                <label for="instrumento">Qual o instrumento?</label>
-                <select name="" id="">
-                    <option value="">Violão (Aço/Nylon)</option>
-                    <option value="">Guitarra</option>
-                    <option value="">Contrabaixo</option>
-                    <option value="">Cavaquinho / Ukelele</option>
-                    <option value="">Outro</option>
-                </select>
-
-                <label for="descricao">Descreva o problema</label>
-                <textarea name="" id="">
-                    Ex: Preciso de uma regulagem geral e troca de cordas...
-                </textarea>
+                <div>
+                    <label for="name">Nome Completo</label>
+                    <input type="text">
+                </div>
+                <div id="dados">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="wpp">WhatsApp</label>
+                        <input type="text" placeholder=" ( ) _____-____">
+                    </div>
+                </div>
+                <div>
+                    <label for="instrumento">Qual o instrumento?</label>
+                    <select name="" id="">
+                        <option value="">Violão (Aço/Nylon)</option>
+                        <option value="">Guitarra</option>
+                        <option value="">Contrabaixo</option>
+                        <option value="">Cavaquinho / Ukelele</option>
+                        <option value="">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="descricao">Descreva o problema</label>
+                    <textarea name="" id="" rows="5" cols="30">
+                        Ex: Preciso de uma regulagem geral e troca de cordas...
+                    </textarea>
+                </div>
+                <button class="btn submeter">
+                    Enviar Solicitação
+                    <img src="./assets/seta.png" id="icon-form" alt="Seta para direita">
+                </button>
             </form>
         </section>
         <hr>
