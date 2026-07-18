@@ -4,6 +4,8 @@
 @import "./cards.css";
 @import "./footes.css";
 @import "./conteudoPrincipal.css";
+@import "./catalogo.css";
+@import "./levaTraz.css";
 
 .btn {
     padding: 0 24px;

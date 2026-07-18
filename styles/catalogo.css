@@ -1,0 +1,124 @@
+#catalogo {
+    /* display: flex;
+    flex-direction: column; */
+    padding: 3% 2%;
+    margin-top: 2%;
+    /* align-items: center; */
+    width: 100%;
+    height: 120vh;
+}
+
+#catalogo header {
+    width: 80%;
+    margin: 0 auto;
+    height: 35%;
+    text-align: center;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone-cards {
+    width: 5%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icone-cards {
+    transform: translateX(8px); 
+}
+
+#titulo-catalogo {
+    color: var(--color-primary);
+}
+
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70%;
+    gap: 24px;
+    margin: 0 auto;
+    margin-top: -7%;
+}
+
+#catalogo header h3 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--color-text-title);
+}
+
+#descricao-catalogo {
+    font-family: var(--font-body);
+    color: var(--color-text-body);
+    font-size: 1rem;
+}
+
+.card {
+    width: 32%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    background-color: var(--color-bg-base);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02); 
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); 
+}
+
+.card h4 {
+    padding: 15px 24px 8px 24px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text-title);
+}
+
+.card p {
+    padding: 0 24px;
+    color: var(--color-text-body);
+    margin-bottom: 24px;
+    flex-grow: 1; 
+}
+
+.img-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.card:hover .img-card {
+    transform: scale(1.1);
+}
+
+.card button {
+    text-align: start;
+    justify-content: start;
+    color: var(--color-primary);
+}
+
+#card-diferente {
+    background-color: var(--color-primary);
+}
+
+#card-diferente h4 {
+    color: var(--color-bg-white);
+} 
+
+#card-diferente p {
+    color: var(--color-bg-white);
+}
+
+#card-diferente button {
+    color: var(--color-bg-white);
+}
+
+#seta-unica {
+    filter: invert(1);
+}
