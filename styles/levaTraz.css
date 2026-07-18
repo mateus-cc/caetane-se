@@ -1,0 +1,67 @@
+#leva-e-traz {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    width: 98%;
+    margin: 0 auto;
+    height: 70vh;
+    justify-content: space-between;
+    background-color: #0D121C;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 32px 32px;
+    color: #FFF;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: -5%;
+}
+
+#leva-e-traz p {
+    color: #D1D5DB;
+}
+
+.icone_leva_traz {
+    width: 50%;
+    filter: invert(56%) sepia(21%) saturate(928%) hue-rotate(338deg) brightness(90%) contrast(85%);
+}
+
+#lupa {
+    width: 10%;
+}
+
+#icone-caminhao-bg {
+    background-color: rgba(181, 122, 88, 0.15);
+    width: 8%;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cep {
+    background-color: #FFF;
+    color: #333333;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: none;
+    width: 40%;
+    margin-top: 4%;
+}
+
+#btn-cep {
+    width: 25%;
+}
+
+#titulo-leva-traz {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+#descricao-leva-traz {
+    font-family: var(--font-body);
+    color: var(--color-text-body);
+    font-size: 1rem;
+    line-height: 1.6;
+}
