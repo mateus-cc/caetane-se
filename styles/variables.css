@@ -3,7 +3,7 @@
      PALETA DE CORES
      ========================================= */
   
-  /* Cores da Marca (Brand) */
+  /* Cores da Marca */
   --color-primary: #3A5A40;         /* Verde Musgo - Principal */
   --color-primary-dark: #2A432F;    /* Verde Musgo Escuro - Hovers */
   
@@ -43,7 +43,7 @@
      ========================================= */
   
   --shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.2);     /* Header */
-  --shadow-card: 0 5px 15px rgba(0, 0, 0, 0.04);       /* Cards (Normal) */
+  --shadow-card: 0 10px 24px rgba(0, 0, 0, 0.2);       /* Cards (Normal) */
   --shadow-card-hover: 0 12px 25px rgba(0, 0, 0, 0.1); /* Cards (Hover) */
   --shadow-button: 0 4px 12px rgba(58, 90, 64, 0.25);  /* Botão CTA Hero */
   --shadow-toast: 0 10px 25px rgba(0, 0, 0, 0.2);      /* Modal/Toast */
