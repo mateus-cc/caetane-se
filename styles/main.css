@@ -6,6 +6,7 @@
 @import "./conteudoPrincipal.css";
 @import "./catalogo.css";
 @import "./levaTraz.css";
+@import "./formulario.css";
 
 .btn {
     padding: 0 24px;
