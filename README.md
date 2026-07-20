@@ -1,6 +1,8 @@
-# 🪕 Caetane-se — Luthieria & Acessórios Acústicos
+# Caetane-se — Luthieria & Acessórios Acústicos
 
 > *"Seu instrumento tocando com a alma e a precisão sonora que ele merece."*
+
+🌐 **Acesse o site publicado:** [https://mateus-cc.github.io/caetane-se/](https://mateus-cc.github.io/caetane-se/)
 
 ---
 
@@ -9,6 +11,27 @@
 Este repositório contém o desenvolvimento de uma Landing Page interativa e moderna, construída como requisito de entrega para a **Atividade 4 e 5 - Construção de Site Simples com HTML, CSS e JS** do curso **Codifica Edu** (Módulo de Front-end).
 
 O projeto simula a página de serviços profissionais de uma oficina de luthieria especializada em manutenção, regulagem, trastejamento e venda de acessórios para instrumentos acústicos (violões, cavaquinhos, entre outros). A aplicação foi idealizada aplicando conceitos sólidos de **UX/UI Design**, acessibilidade, consumo de APIs externas e versionamento de código.
+
+---
+
+## 🧪 Como Testar a Aplicação
+
+Para simular a experiência real de um cliente interagindo com a página, acesse o link do projeto publicado e teste as funcionalidades dinâmicas. 
+
+**Testando o serviço de "Leva e Traz" (API ViaCEP):**
+A regra de negócio estipula que a coleta de instrumentos atende exclusivamente a cidade sede da oficina. Siga as instruções abaixo para testar os diferentes comportamentos da aplicação:
+
+1. **Cenário de Sucesso (CEP Autorizado):**
+   * Digite um CEP válido da cidade de **Araras - SP** (exemplo: `13600-000` ou outro CEP local válido).
+   * **Resultado esperado:** O sistema validará a localidade e preparará o redirecionamento automático para o WhatsApp, já com uma mensagem pré-formatada contendo o bairro do cliente.
+
+2. **Cenário de Restrição (Fora da Área de Cobertura):**
+   * Digite um CEP válido de qualquer outra cidade do Brasil.
+   * **Resultado esperado:** O sistema fará a leitura via API, identificará que a localidade não é Araras e exibirá um alerta informando que a região ainda não é atendida pela expansão atual.
+
+3. **Cenário de Erro (CEP Inexistente):**
+   * Digite um CEP falso ou com formato inválido (exemplo: `00000-000`).
+   * **Resultado esperado:** A API registrará o erro e a interface avisará o usuário para corrigir a digitação.
 
 ---
 
