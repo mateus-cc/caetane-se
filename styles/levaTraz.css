@@ -27,6 +27,7 @@
 
 #lupa {
     width: 10%;
+    filter: invert(1);
 }
 
 #icone-caminhao-bg {

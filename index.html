@@ -16,20 +16,20 @@
             <h3 id="titulo-site">Caetane-<strong>se</strong></h3>
         </div>
         <ul id="lista-header">
-            <a href="">
+            <a href="#cabecalho">
                 <li>Início</li>
             </a>
-            <a href="">
+            <a href="#catalogo">
                 <li>Especialidades</li>
             </a>
-            <a href="">
+            <a href="#leva-e-traz">
                 <li>Leva e Traz</li>
             </a>
-            <a href="">
+            <a href="#form-container">
                 <li>Contato</li>
             </a>
         </ul>
-        <button class="btn">
+        <button class="btn" id="btn-agendar-header">
             Agendar Luthier
             <img src="./assets/agenda.png" alt="Ícone de agenda">
         </button>
@@ -45,12 +45,12 @@
                     Luthieria artesanal, regulagem precisa e acessórios selecionados. Devolva a alma e o timbre perfeito ao seu violão, guitarra ou baixo.
                 </p>
                 <div>
-                    <button class="btn btn-primario">Ver Serviços</button>
-                    <button class="btn btn-secundario">Fale Conosco</button>
+                    <button id="btn-ver-servicos" class="btn btn-primario">Ver Serviços</button>
+                    <button id="btn-fale-conosco" class="btn btn-secundario">Fale Conosco</button>
                 </div>
             </article>
             <aside>
-                <img src="./assets/guitar.jpg" alt="">
+                <img src="./assets/guitar.jpg" alt="Foto ilustrativa de violão">
             </aside>
         </section>
         <section id="catalogo">
@@ -63,34 +63,34 @@
             </header>
             <div id="cards">
                 <article class="card">
-                    <img class="img-card" src="./assets/cordas.JPG" alt="">
+                    <img class="img-card" src="./assets/cordas.JPG" alt="Foto ilustrativa de cordas">
                     <h4>Cordas</h4>
                     <p>
                         Encordoamentos premium para violão, guitarras, baixos e cavaquinhos. Trabalhamos com as melhores marcas para garantir a afinação perfeita.
                     </p>
-                    <button class="btn ">
+                    <button class="btn btn-card-catalogo btn-em-breve">
                         Ver opções <img class="icone-cards" src="./assets/seta-direita.png" alt="Seta para direita">
                     </button>
                 </article>
                 <article class="card">
-                    <img class="img-card" src="./assets/acessorio.JPG" alt="">
+                    <img class="img-card" src="./assets/acessorio.JPG" alt="Foto ilustrativa de acessório">
                     <h4>Acessórios</h4>
                     <p>
                         Capotrastes, afinadores, correias, óleos essenciais para escala e produtos de limpeza para manutenção diária.
                     </p>
-                    <button class="btn ">
+                    <button class="btn btn-card-catalogo btn-em-breve">
                         Ver opções <img class="icone-cards" src="./assets/seta-direita.png" alt="Seta para direita">
                     </button>
                 </article>
                 <article class="card" id="card-diferente">
-                    <img class="img-card" src="./assets/1.jpg" alt="">
+                    <img class="img-card" src="./assets/1.jpg" alt="Foto ilustrativa">
                     <h4 class="card_diferente_texto">
                         Luthieria Completa
                     </h4>
                     <p class="card_diferente_texto">
                         Regulagem de oitavas, troca de trastes, retífica, colagem de cavalete, elétrica e customizações minuciosas.
                     </p>
-                    <button class="btn ">
+                    <button class="btn btn-card-catalogo" id="btn-agendar-servicos">
                         Agendar serviço <img id="seta-unica" class="icone-cards" src="./assets/seta-direita.png" alt="Seta para direita">
                     </button>
                 </article>
@@ -105,8 +105,8 @@
                 Cuidamos da logística por você. Digite seu CEP abaixo para veriticar se sua região está em nossa área de cobertura para coleta do instrumento em domicílio. 
             </p>
             <div>
-                <input type="text" id="cep" placeholder="Digite seu CEP">
-                <button id="btn-cep" class="btn btn-primario">
+                <input type="text" id="cep" name="cep" placeholder="Digite seu CEP (Sem pontos!)">
+                <button id="btn-cep" class="btn btn-primario" type="button">
                     Consultar
                     <img id="lupa" src="./assets/lupa-arredondada.png" alt="Lupa">
                 </button>
@@ -118,7 +118,7 @@
                 <p class="texto_infos">
                     Preencha o formulário para orçamentos, dúvidas ou solicitar a coleta do seu instrumento.
                 </p>
-                <a class="texto_infos links_infos" href="">
+                <a class="texto_infos links_infos" href="https://wa.me/5519992139999">
                     <div class="icone_bg">
                         <img class="form_icones" src="./assets/whatsapp.png" alt="WhatsApp">
                     </div>
@@ -137,38 +137,39 @@
                     Araras - SP
                 </a>
             </div>
-            <form action="">
+            <form>
                 <div>
                     <label for="name">Nome Completo</label>
-                    <input type="text">
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div id="dados">
                     <div>
                         <label for="email">E-mail</label>
-                        <input type="email">
+                        <input type="email" id="email" name="email">
                     </div>
                     <div>
                         <label for="wpp">WhatsApp</label>
-                        <input type="text" placeholder=" ( ) _____-____">
+                        <input type="tel" placeholder=" ( ) _____-____" id="wpp" name="wpp">
                     </div>
                 </div>
                 <div>
                     <label for="instrumento">Qual o instrumento?</label>
-                    <select name="" id="">
-                        <option value="">Violão (Aço/Nylon)</option>
-                        <option value="">Guitarra</option>
-                        <option value="">Contrabaixo</option>
-                        <option value="">Cavaquinho / Ukelele</option>
-                        <option value="">Outro</option>
+                    <select name="instrumento" id="instrumento">
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="violao">Violão (Aço/Nylon)</option>
+                        <option value="guitarra">Guitarra</option>
+                        <option value="baixo">Contrabaixo</option>
+                        <option value="cavaquinho">Cavaquinho / Ukelele</option>
+                        <option value="outro">Outro</option>
                     </select>
                 </div>
                 <div>
                     <label for="descricao">Descreva o problema</label>
-                    <textarea name="" id="" rows="5" cols="30">
+                    <textarea name="descricao" id="descricao" rows="3" cols="30">
                         Ex: Preciso de uma regulagem geral e troca de cordas...
                     </textarea>
                 </div>
-                <button class="btn submeter">
+                <button class="btn submeter btn-em-breve" type="submit" id="btn-enviar-form">
                     Enviar Solicitação
                     <img src="./assets/seta.png" id="icon-form" alt="Seta para direita">
                 </button>
@@ -178,19 +179,24 @@
     </main>
     <footer>
         <section>
-            <img src="./assets/" alt="">
-            <h5>
-                Caetane-se
-            </h5>
+            <div class="footer-marca">
+                <img id="footer-logo" src="./assets/palheta.png" alt="Logo">
+                <h5>
+                    Caetane-se
+                </h5>
+            </div>
             <p>Arte, precisão e cuidado em cada detalhe da luthieria</p>
-            <a href="">
-                <img src="./assets/instagram.png" alt="Instagram">
-            </a>
-            <a href="">
-                <img src="./assets/whatsapp.png" alt="Whatsapp">
-            </a>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/deliranteparanoia/" class="social-link">
+                    <img class="icon-footer" src="./assets/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/5519992139999" class="social-link">
+                    <img class="icon-footer" src="./assets/whatsapp.png" alt="Whatsapp">
+                </a>
+            </div>
             <small>&copy; 2026 Caetane-se Luthieria. Projeto Acadêmico Codifica Edu</small>
         </section>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
